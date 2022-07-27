@@ -1,8 +1,7 @@
 import React from 'react';
-import Plain from './plain';
-import Pepperoni from './pepperoni';
-import MeatLover from './meat-lover';
-import Veggie from './veggie';
+import Slice from './slice';
+import plain from './images/plain.jpg';
+import pepperoni from './images/pepperoni.jpg';
 import './css/menu.css';
 
 function Menu() {
@@ -11,10 +10,17 @@ function Menu() {
       <h1 className='primary-text'>New York's World Famous</h1>
       <h1 className='secondary-text'>Pizza Menu</h1>
       <div className='row'>
-        <Plain/>
-        <Pepperoni/>
-        <MeatLover/>
-        <Veggie/>
+        <Slice 
+        img={plain}
+        title="Plain"
+        description="It's got cheese, it's got tomato sauce, and it's only  a dollar. What more could you ask for?"
+        price="1.00" />
+
+<Slice 
+        img={pepperoni}
+        title="Pepperoni"
+        description="It's got cheese, it's got tomato sauce, and pepperonins and it's only  a dollar. What more could you ask for?"
+        price="1.00" />
       </div>
     </div>
   );
